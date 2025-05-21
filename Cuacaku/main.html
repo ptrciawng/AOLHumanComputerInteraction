@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cuacaku - Perkiraan Cuaca dan Udara</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbar-left">
+      <a href="./main.html" class="navbar-logo">
+        <img src="./assets/logo.png" alt="Cuacaku" />
+      </a>
+    </div>
+    <div class="navbar-toggle" id="navbar-toggle">&#9776;</div>
+    <div class="navbar-right" id="navbar-menu">
+      <a href="./recommendation.html">Health & Activities</a>
+      <a href="./education.html">Education</a>
+    </div>
+  </nav>
+
+  <div class="search-container">
+    <input type="text" placeholder="Cari kota atau lokasi...">
+    <button class="search-btn">Cari</button>
+    <button class="location-btn">Lokasi</button>
+  </div>
+
+  <div class="location-text">
+    Lokasi saat ini: <strong>Bekasi, JABODETABEK, Indonesia</strong>
+  </div>
+
+  <div class="weather-card">
+    <div class="weather-main">
+      <div class="weather-left">
+        <div class="weather-icon">🌙</div>
+        <div class="weather-desc">Partially Cloudy</div>
+      </div>
+      <div class="weather-temp">
+        <div class="temp-value">27.9°C</div>
+        <div class="temp-feels">Feels like 31.7°C</div>
+      </div>
+    </div>
+    <div class="weather-details">
+      <div class="detail-box">
+        🌬️ <strong>Kecepatan Angin</strong><br>
+        5.9 km/h
+      </div>
+      <div class="detail-box">
+        💧 <strong>Kelembapan</strong><br>
+        79.6%
+      </div>
+    </div>
+    <div class="weather-note">
+      🔷 Jangan lupa pakai jaket jika keluar malam.
+    </div>
+  </div>
+
+  <div class="section-box">
+    <h2 class="forecast-title">🌤️ Prakiraan Cuaca - 24 Jam</h2>
+    <div class="forecast-grid" id="forecastGrid"></div>      
+  </div>
+
+  <div class="section-box">
+    <h2 class="forecast-title">☀️ Prakiraan Harian</h2>
+    <div class="forecast-grid" id="dailyForecastGrid"></div>
+  </div>
+
+  <div class="section-box">
+    <h2 class="forecast-title">🌍 Kualitas Udara Saat Ini</h2>
+    <div class="air-quality-summary">
+      <span class="aqi-badge">US AQI: 228 - <strong>Sangat tidak sehat</strong> 🟣</span>
+    </div>
+    <div class="air-quality-grid">
+      <div class="pollutant-box">🌫️<br>PM2.5<br><strong>104.8 µg/m³</strong></div>
+      <div class="pollutant-box">🔥<br>Karbon Monoksida (CO)<br><strong>2391 ppm</strong></div>
+      <div class="pollutant-box">🧪<br>Nitrogen Monoksida (NO)<br><strong>0.1 ppb</strong></div>
+      <div class="pollutant-box">🧪<br>Nitrogen Dioksida (NO₂)<br><strong>71.4 ppb</strong></div>
+      <div class="pollutant-box">🌿<br>Sulfur Dioksida (SO₂)<br><strong>71.9 ppb</strong></div>
+    </div>
+  </div>
+
+  <div class="section-box">
+    <h2 class="forecast-title">📉 Kualitas Udara - 24 Jam</h2>
+    <div class="air-hourly-grid" id="airHourlyGrid"></div>
+  </div>
+
+  <footer class="simple-footer">
+    <p>&copy; 2025 Cuacaku. All rights reserved.</p>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
